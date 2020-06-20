@@ -38,37 +38,52 @@
     }
   }
   .main-desc {
-      text-align: center;
-      position: relative;
-      width: fit-content;
-      margin: 0 auto 274px auto;
-      animation: fade-in 1.5s ease-in-out;
-      .conffetti-img {
-        animation: fade-in-2 2.5s ease-in-out;
-          position: absolute;
-          top: -70px;
-          left: -380px;
-      }
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 274px auto;
+    animation: fade-in 1.5s ease-in-out;
+    .conffetti-img {
+      animation: fade-in-2 2.5s ease-in-out;
+      position: absolute;
+      top: -70px;
+      left: -380px;
+    }
   }
 
   .select-work-container {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      animation: fade-in 1.5s ease-in-out;
-      h2 {
-          text-transform: uppercase;
-          letter-spacing: 7px;
-          margin-bottom: 48px;
-      }
-      .btn {
-          margin-bottom: 44px;
-      }
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    animation: fade-in 1.5s ease-in-out;
+    margin-bottom: 90px;
+    .confetti-sm1-img {
+      position: absolute;
+      top: 0;
+      right: -80px;
+      animation: fade-in-2 2.5s ease-in-out;
+    }
+    .confetti-sm2-img {
+      position: absolute;
+      bottom: 0;
+      left: -50px;
+      animation: fade-in-2 2.5s ease-in-out;
+    }
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      margin-bottom: 48px;
+    }
+    .btn {
+      margin-bottom: 44px;
+    }
   }
 }
 
 @keyframes fade-in {
-  0%, 30% {
+  0%,
+  30% {
     opacity: 0;
   }
   100% {
@@ -77,19 +92,21 @@
 }
 
 @keyframes fade-in-1 {
-    0%, 50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0%,
+  50% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes fade-in-2 {
-    0%, 60% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0%,
+  60% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}

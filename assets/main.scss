@@ -11,8 +11,9 @@ body {
 }
 
 .container {
-  width: 1166px;
+  width: 1214px;
   margin: 0 auto;
+  padding: 0 24px
 }
 
 h1,
@@ -86,6 +87,15 @@ h3 {
   transition: 0.3s;
   top: 0;
   left: 0;
+  &::after {
+    content: attr(data-sub-text);
+    font-weight: 300;
+    margin-left: 24px;
+    padding-left: 24px;
+    border-left: solid var(--primary-color) 2px;
+    opacity: 0;
+    transition: 0.3s;
+  }
   &::before {
     content: "";
     display: block;
@@ -105,6 +115,9 @@ h3 {
       top: 0;
       left: 0;
       opacity: 0;
+    }
+    &::after {
+      opacity: 1;
     }
   }
   &.btn-small {

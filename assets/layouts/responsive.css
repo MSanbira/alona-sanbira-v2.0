@@ -1,0 +1,8 @@
+@media (max-width: 1214px) {
+  .container {
+    width: 798px; } }
+@media (max-width: 800px) {
+  .container {
+    width: 100%; } }
+
+/*# sourceMappingURL=responsive.css.map */

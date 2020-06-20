@@ -44,4 +44,17 @@ header {
       header nav .work-nav-links.show {
         display: flex; }
 
+footer {
+  background: white;
+  border-top: 1px solid var(--primary-color-fade);
+  padding: 24px 0; }
+  footer .container {
+    display: flex;
+    align-items: center; }
+  footer .contact-btn {
+    margin-right: 48px;
+    opacity: 1; }
+  footer h4 {
+    opacity: 0.5; }
+
 /*# sourceMappingURL=general.css.map */

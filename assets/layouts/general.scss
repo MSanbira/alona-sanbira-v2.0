@@ -53,3 +53,20 @@ header {
     }
   }
 }
+
+footer {
+  background: white;
+  border-top: 1px solid var(--primary-color-fade);
+  padding: 24px 0;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .contact-btn {
+    margin-right: 48px;
+    opacity: 1;
+  }
+  h4 {
+    opacity: 0.5;
+  }
+}
