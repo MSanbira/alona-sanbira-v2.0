@@ -7,6 +7,7 @@
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  margin-top: 83px;
 }
 
 .container {
@@ -20,7 +21,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   color: var(--secondary-color);
   font-size: 18px;
   font-weight: 300;
@@ -32,6 +34,10 @@ p {
 h1 {
   font-size: 56px;
   font-weight: 600;
+}
+
+h2 {
+  font-weight: 800;
 }
 
 h3 {
@@ -78,6 +84,8 @@ h3 {
   justify-content: center;
   background: white;
   transition: 0.3s;
+  top: 0;
+  left: 0;
   &::before {
     content: "";
     display: block;
@@ -91,7 +99,8 @@ h3 {
     transition: 0.3s;
   }
   &:hover {
-    margin: 4px -4px -4px 4px;
+    top: 4px;
+    left: 4px;
     &::before {
       top: 0;
       left: 0;
@@ -100,6 +109,28 @@ h3 {
   }
   &.btn-small {
     padding: 4px 16px;
+  }
+  &.btn-big {
+    padding: 30px 44px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    width: 720px;
+    justify-content: flex-start;
+    border-width: 2px;
+    &::before {
+      border-width: 2px;
+      top: 10px;
+      left: 10px;
+    }
+    &:hover {
+      top: 10px;
+      left: 10px;
+      &::before {
+        top: 0;
+        left: 0;
+      }
+    }
   }
 }
 
