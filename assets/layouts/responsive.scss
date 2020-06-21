@@ -1,11 +1,21 @@
-@media  (max-width: 1215px) {
-    .container {
-        width: 798px;
+@media (max-width: 1215px) {
+  .container {
+    width: 798px;
+  }
+  #homePage {
+    .select-work-container {
+      .confetti-sm1-img {
+        right: -288px;
+      }
+      .confetti-sm2-img {
+        left: -258px;
+      }
     }
+  }
 }
 
-@media  (max-width: 800px) {
-    .container {
-        width: 100%;
-    }
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
 }

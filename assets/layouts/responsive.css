@@ -1,6 +1,11 @@
 @media (max-width: 1215px) {
   .container {
-    width: 798px; } }
+    width: 798px; }
+
+  #homePage .select-work-container .confetti-sm1-img {
+    right: -288px; }
+  #homePage .select-work-container .confetti-sm2-img {
+    left: -258px; } }
 @media (max-width: 800px) {
   .container {
     width: 100%; } }
