@@ -1,3 +1,5 @@
+const rellax = new Rellax('.rellax');
+
 const menus = document.querySelectorAll("[data-menu-to-open]");
 const pages = document.querySelectorAll("[data-page-name]");
 const pageNavBtns = document.querySelectorAll(".nav-btn");
