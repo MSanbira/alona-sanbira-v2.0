@@ -1,20 +1,21 @@
 #homePage {
   .title-cat-container {
     width: fit-content;
-    margin: 295px auto 53px auto;
+    margin: 330px auto 53px auto;
     position: relative;
     .main-title {
       font-size: 126px;
       letter-spacing: 14px;
       font-weight: 800;
       width: fit-content;
+      line-height: 1;
       margin: 0;
       animation: fade-in 1.5s ease-in-out;
     }
     .cat-section {
       position: absolute;
       left: 230px;
-      top: -175px;
+      top: -205px;
       z-index: 10;
       animation: fade-in-1 2s ease-in-out;
       .cat-img {
@@ -43,6 +44,7 @@
     width: fit-content;
     margin: 0 auto 274px auto;
     animation: fade-in 1.5s ease-in-out;
+    max-width: 460px;
     .conffetti-img {
       animation: fade-in-2 2.5s ease-in-out;
       position: absolute;
@@ -75,8 +77,12 @@
       letter-spacing: 7px;
       margin-bottom: 48px;
     }
+    .btn-container {
+      width: 720px;
+    }
     .btn {
       margin-bottom: 44px;
+      width: 100%;
     }
   }
 }

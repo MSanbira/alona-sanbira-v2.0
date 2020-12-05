@@ -1,3 +1,22 @@
+.white-screen {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: 90;
+  transition: 0.5s;
+  opacity: 0;
+  &.show {
+    opacity: 1;
+  }
+  &.hide {
+    display: none;
+  }
+}
+
 header {
   background: white;
   border-bottom: 1px solid var(--primary-color-fade);
@@ -30,19 +49,13 @@ header {
       flex-flow: column;
       padding: 18px 24px;
       background: #ffffff;
-      box-shadow: 4px 4px 20px rgba(72, 0, 189, 0.1);
+      box-shadow: 2px 2px var(--primary-color);
+      border: solid 1px var(--primary-color);
       position: absolute;
       top: 40px;
-      left: -56px;
-      min-width: 164px;
+      left: -16px;
       .text-btn {
-        font-size: 20px;
         margin-right: 0;
-        opacity: 1;
-        font-weight: 300;
-        &:hover {
-          font-weight: 600;
-        }
         &:not(:last-child) {
           margin-bottom: 24px;
         }
@@ -51,6 +64,12 @@ header {
         display: flex;
       }
     }
+  }
+  .contact-and-cv,
+  .mobile-menu-icon,
+  .mobile-menu-exit,
+  .work-divider {
+    display: none;
   }
 }
 
@@ -63,8 +82,8 @@ footer {
     align-items: center;
   }
   .contact-btn {
-    margin-right: 48px;
-    opacity: 1;
+    margin-right: 24px;
+    font-weight: var(--weight-bold);
   }
   h4 {
     opacity: 0.5;

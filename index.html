@@ -6,7 +6,7 @@
     <title>Alona Sanbira</title>
 
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap"
       rel="stylesheet"
     />
 
@@ -14,40 +14,75 @@
     <link rel="stylesheet" href="/assets/main.css" type="text/css" />
     <link rel="stylesheet" href="/assets/layouts/general.css" type="text/css" />
     <link rel="stylesheet" href="/assets/layouts/home.css" type="text/css" />
-    <link rel="stylesheet" href="/assets/layouts/responsive.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/assets/layouts/responsive.css"
+      type="text/css"
+    />
   </head>
 
   <body>
+    
+    <div class="white-screen hide"></div>
+
     <header>
       <div class="container">
         <div class="logo-nav-section">
-          <a href="*" class="text-btn title">ALONA SANBIRA</a>
-          <div class="divider">//</div>
-          <nav>
-            <div class="text-btn with-img" data-open-menu="work">
-              work <img src="/assets/images/arr-down.svg" alt="V" />
+          <img
+            class="mobile-menu-icon"
+            src="/assets/images/mobile menu icon.svg"
+            alt="menu"
+            data-open-menu="nav"
+          />
+          <a href="#home" class="text-btn title">ALONA SANBIRA</a>
+          <div class="divider hide-on-mobile">//</div>
+          <nav data-menu-to-open="nav">
+            <img
+              class="mobile-menu-exit"
+              src="/assets/images/close.svg"
+              alt="close"
+            />
+            <a href="#about" class="text-btn nav-btn">about</a>
+            <div class="text-btn with-img hide-on-mobile nav-btn" data-open-menu="work">
+              work
+              <svg
+                width="8"
+                height="5"
+                viewBox="0 0 8 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L4 4L7 1"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                />
+              </svg>
             </div>
+            <div class="work-divider color-primary">select work</div>
             <div class="work-nav-links" data-menu-to-open="work">
-              <a href="*" class="text-btn">nomnom</a>
-              <a href="*" class="text-btn">herbalist</a>
-              <a href="*" class="text-btn">bits of gold</a>
-              <a href="*" class="text-btn">hatch baby</a>
-              <a href="*" class="text-btn">politc.li</a>
-              <a href="*" class="text-btn">globes</a>
+              <a href="#nomnom" class="text-btn nav-btn">nomnom</a>
+              <a href="*" class="text-btn nav-btn">herbalist</a>
+              <a href="*" class="text-btn nav-btn">bits of gold</a>
+              <a href="*" class="text-btn nav-btn">hatch baby</a>
+              <a href="*" class="text-btn nav-btn">politc.li</a>
             </div>
-            <a href="*" class="text-btn">about</a>
+            <div class="contact-and-cv">
+              <div class="btn btn-small">
+                <img src="/assets/images/mail.svg" alt="contact me" />
+              </div>
+              <div class="btn btn-small">Download CV</div>
+            </div>
           </nav>
         </div>
-        <div class="btn btn-small">download CV</div>
+        <div class="btn btn-small">Download CV</div>
       </div>
     </header>
 
-    <section id="homePage">
+    <section id="homePage" class="show" data-page-name="home">
       <div class="container">
         <div class="title-cat-container">
-          <h1 class="main-title color-primary">
-            HELLO
-          </h1>
+          <h1 class="main-title color-primary">HELLO</h1>
           <div class="cat-section">
             <img src="/assets/images/Cat-hero.svg" class="cat-img" alt="cat" />
             <h1 class="o-letter color-primary">O</h1>
@@ -60,8 +95,8 @@
         </div>
 
         <p class="color-primary main-desc">
-          I'm a product designer with 2+ years’ experience in<br />
-          leading product UX for a variety of digital products.<br />
+          I'm a product designer with 3+ years’ experience in leading product UX
+          for a variety of digital products.<br />
           I’m also a huge cat lady.<br />
           <a href="*" class="color-primary">Read more about me.</a>
           <img
@@ -83,30 +118,37 @@
             alt="confetti"
           />
           <h2 class="color-primary">select work</h2>
-          <div class="btn btn-big" data-sub-text="a place for foodies">
-            nomnom
-          </div>
-          <div class="btn btn-big" data-sub-text="dashboard ui">herbalist</div>
-          <div class="btn btn-big" data-sub-text="crypto exchange">
-            bits of gold
-          </div>
-          <div class="btn btn-big" data-sub-text="ecommerce ui">hatch baby</div>
-          <div class="btn btn-big" data-sub-text="empowering voters">
-            politic.li
-          </div>
-          <div class="btn btn-big" data-sub-text="magazine redesign">
-            globes
+          <div class="btn-container">
+            <div class="btn btn-big" data-sub-text="a place for foodies">
+              nomnom
+            </div>
+            <div class="btn btn-big" data-sub-text="dashboard ui">
+              herbalist
+            </div>
+            <div class="btn btn-big" data-sub-text="crypto exchange">
+              bits of gold
+            </div>
+            <div class="btn btn-big" data-sub-text="ecommerce ui">
+              hatch baby
+            </div>
+            <div class="btn btn-big" data-sub-text="empowering voters">
+              politic.li
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="aboutPage" data-page-name="about">about!!</section>
+
+    <section id="nomnomPage" data-page-name="nomnom">NomNom!!</section>
+
     <footer>
       <div class="container">
         <a href="*" class="text-btn contact-btn">CONTACT ME</a>
-        <h4 class="color-primary">+972 50 335 6661</h3>
+        <h4 class="color-primary">+972 50 335 6661</h4>
         <div class="divider">//</div>
-        <h4 class="color-primary">alona.cr@gmail.com</h3>
+        <h4 class="color-primary">alona.cr@gmail.com</h4>
       </div>
     </footer>
 
