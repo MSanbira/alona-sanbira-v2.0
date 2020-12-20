@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alona Sanbira</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap"
       rel="stylesheet"
     />
 
@@ -15,6 +20,7 @@
     <link rel="stylesheet" href="/assets/layouts/general.css" type="text/css" />
     <link rel="stylesheet" href="/assets/layouts/home.css" type="text/css" />
     <link rel="stylesheet" href="/assets/layouts/about.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/layouts/nomnom.css" type="text/css" />
     <link
       rel="stylesheet"
       href="/assets/layouts/responsive.css"
@@ -26,67 +32,65 @@
     <div class="white-screen hide"></div>
 
     <header>
-      <div class="container">
-        <div class="logo-nav-section">
+      <div class="logo-nav-section">
+        <img
+          class="mobile-menu-icon"
+          src="/assets/images/mobile menu icon.svg"
+          alt="menu"
+          data-open-menu="nav"
+        />
+        <a href="#home" class="text-btn title">ALONA SANBIRA</a>
+        <div class="divider hide-on-mobile">//</div>
+        <nav data-menu-to-open="nav">
           <img
-            class="mobile-menu-icon"
-            src="/assets/images/mobile menu icon.svg"
-            alt="menu"
-            data-open-menu="nav"
+            class="mobile-menu-exit"
+            src="/assets/images/close.svg"
+            alt="close"
           />
-          <a href="#home" class="text-btn title">ALONA SANBIRA</a>
-          <div class="divider hide-on-mobile">//</div>
-          <nav data-menu-to-open="nav">
-            <img
-              class="mobile-menu-exit"
-              src="/assets/images/close.svg"
-              alt="close"
-            />
-            <a href="#about" class="text-btn nav-btn">about</a>
-            <div
-              class="text-btn with-img hide-on-mobile nav-btn"
-              data-open-menu="work"
+          <a href="#about" class="text-btn nav-btn">about</a>
+          <div
+            class="text-btn with-img hide-on-mobile nav-btn"
+            data-open-menu="work"
+          >
+            work
+            <svg
+              width="8"
+              height="5"
+              viewBox="0 0 8 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              work
-              <svg
-                width="8"
-                height="5"
-                viewBox="0 0 8 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 1L4 4L7 1"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                />
-              </svg>
+              <path
+                d="M1 1L4 4L7 1"
+                stroke="currentColor"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="work-divider color-primary">select work</div>
+          <div class="work-nav-links" data-menu-to-open="work">
+            <a href="#nomnom" class="text-btn nav-btn">nomnom</a>
+            <a href="*" class="text-btn nav-btn">herbalist</a>
+            <a href="*" class="text-btn nav-btn">bits of gold</a>
+            <a href="*" class="text-btn nav-btn">hatch baby</a>
+            <a href="*" class="text-btn nav-btn">politc.li</a>
+          </div>
+          <div class="contact-and-cv">
+            <div class="btn btn-small">
+              <img src="/assets/images/mail.svg" alt="contact me" />
             </div>
-            <div class="work-divider color-primary">select work</div>
-            <div class="work-nav-links" data-menu-to-open="work">
-              <a href="#nomnom" class="text-btn nav-btn">nomnom</a>
-              <a href="*" class="text-btn nav-btn">herbalist</a>
-              <a href="*" class="text-btn nav-btn">bits of gold</a>
-              <a href="*" class="text-btn nav-btn">hatch baby</a>
-              <a href="*" class="text-btn nav-btn">politc.li</a>
-            </div>
-            <div class="contact-and-cv">
-              <div class="btn btn-small">
-                <img src="/assets/images/mail.svg" alt="contact me" />
-              </div>
-              <div class="btn btn-small">Download CV</div>
-            </div>
-          </nav>
-        </div>
-        <div class="btn btn-small">Download CV</div>
+            <div class="btn btn-small">resume</div>
+          </div>
+        </nav>
       </div>
+      <div class="btn btn-small">resume</div>
     </header>
 
     <section id="homePage" class="show" data-page-name="home">
       <div class="container">
         <div class="title-cat-container">
           <h1 class="main-title color-primary">HELLO</h1>
-          <div class="cat-section">
+          <div class="cat-section hide-on-mobile">
             <img src="/assets/images/Cat-hero.svg" class="cat-img" alt="cat" />
             <h1 class="o-letter color-primary">O</h1>
             <img
@@ -95,16 +99,21 @@
               alt="cat shoe"
             />
           </div>
+          <img
+            class="title-cat-mobile"
+            src="/assets/images/Cat-Mobile.png"
+            alt="cat"
+          />
         </div>
 
         <p class="color-primary main-desc">
           I'm a product designer with 3+ years’ experience in leading product UX
           for a variety of digital products.<br />
           I’m also a huge cat lady.<br />
-          <a href="*" class="color-primary">Read more about me.</a>
+          <a href="#about" class="color-primary">Read more about me.</a>
           <img
             src="/assets/images/Conffetti.svg"
-            class="conffetti-img"
+            class="conffetti-img hide-on-mobile"
             alt="conffetti"
           />
         </p>
@@ -122,21 +131,28 @@
           />
           <h2 class="color-primary">select work</h2>
           <div class="btn-container">
-            <div class="btn btn-big" data-sub-text="a place for foodies">
+            <a
+              href="#nomnom"
+              class="btn btn-big"
+              data-sub-text="a place for foodies"
+            >
               nomnom
-            </div>
-            <div class="btn btn-big" data-sub-text="dashboard ui">
+            </a>
+            <a href="#" class="btn btn-big" data-sub-text="dashboard ui">
               herbalist
-            </div>
-            <div class="btn btn-big" data-sub-text="crypto exchange">
+            </a>
+            <a href="#" class="btn btn-big" data-sub-text="crypto exchange">
               bits of gold
-            </div>
-            <div class="btn btn-big" data-sub-text="ecommerce ui">
+            </a>
+            <a href="#" class="btn btn-big" data-sub-text="ecommerce ui">
               hatch baby
-            </div>
-            <div class="btn btn-big" data-sub-text="empowering voters">
+            </a>
+            <a href="#" class="btn btn-big" data-sub-text="empowering voters">
               politic.li
-            </div>
+            </a>
+            <a href="#" class="btn btn-big" data-sub-text="lo yodaim al ma">
+              afgana
+            </a>
           </div>
         </div>
       </div>
@@ -177,20 +193,320 @@
             <img src="/assets/images/mail.svg" alt="contact me" />
             <span class="hide-on-mobile">Email me</span>
           </a>
-          <div class="btn btn-long">Download CV</div>
+          <div class="btn btn-long">resume</div>
         </div>
       </div>
     </section>
 
-    <section id="nomnomPage" data-page-name="nomnom">NomNom!!</section>
+    <section id="nomnomPage" data-page-name="nomnom">
+      <div class="main-img">
+        <img src="/assets/images/nomnom/header.png" alt="nomnom app" />
+      </div>
+      <div class="container">
+        <div class="summery-text-container">
+          <div class="titles">
+            <h1>nomnom</h1>
+            <h4>mobile app</h4>
+          </div>
+          <div class="text-block">
+            <h3>TL;DR</h3>
+            <p>
+              Nomnom is an app for Millenials who love to eat, travel and are
+              specifically drawn to asian food and culture. The app caters to
+              asian foodies and gives them a local, delicious and asian-oriented
+              experience, from restaurants and street vendors to full-on food
+              tours.
+            </p>
+          </div>
+          <div class="text-block">
+            <h3>PROJECT SPECS</h3>
+            <p>
+              A student project, created as a part of my studies at
+              <a href="createfuture.co.il" class="highlight" target="_blank"
+                >CREATE.</a
+              >
+              <br />
+              Role // UI design, Illustration<br />
+              Year // created July, 2019
+            </p>
+          </div>
+          <div class="text-block">
+            <h3>BACKGROUND</h3>
+            <p>
+              We all have a ‘thing’ we live and breathe for. It could be art,
+              design or automotives. For those who live and breathe asian food,
+              I designed a delightful, intuitive experience browsing and booking
+              food tours and restaurant reservations.
+            </p>
+          </div>
+          <div class="text-block">
+            <h3>THE GOAL</h3>
+            <p>
+              Help travellers with a taste for asian food get easy access to
+              relevant tours and restaurants.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p">
+          <h3>EASY FILTERING</h3>
+          <p class="text-container-1">
+            To help users’ orientation and planning ability, I designed three
+            types of filters, all easy to use and understand, and are beautiful
+            to look at.
+          </p>
+        </div>
+      </div>
+
+      <img
+        class="margin-center hide-on-mobile contained-img"
+        src="/assets/images/nomnom/Photo-multi-screen-filtering.png"
+        alt="nomnom mockup"
+      />
+      <div class="img-carousel">
+        <div class="dots-cover">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="item">
+          <img
+            src="/assets/images/nomnom/Device Mock-1.png"
+            alt="nomnom mockup"
+          />
+          <div class="dots">
+            <div class="selected"></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="/assets/images/nomnom/Device Mock-2.png"
+            alt="nomnom mockup"
+          />
+          <div class="dots">
+            <div></div>
+            <div class="selected"></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="/assets/images/nomnom/Device Mock-3.png"
+            alt="nomnom mockup"
+          />
+          <div class="dots">
+            <div></div>
+            <div></div>
+            <div class="selected"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p">
+          <h3>KNOW THY HOST</h3>
+          <p class="text-container-2">
+            I focused on users’ need to immerse themselves in local culture and
+            cuisine. The two most prominent values are locality and
+            authenticity.
+          </p>
+        </div>
+        <div class="host-container">
+          <img src="/assets/images/nomnom/Host-image.png" alt="host" />
+          <div class="title-container">
+            <h1>LEE HUANG</h1>
+            <h2>
+              Food photographer, chef<br />
+              and a New-Yorker at heart
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p">
+          <h3>TOUR INFORMATION</h3>
+          <p class="text-container-3">
+            Users can do a deep-dive into each tour, and receive full
+            information about the when’s and where’s, as well as information
+            about their local host and other tours available through that
+            specific host, if they liked them and wanted to get another taste.
+          </p>
+        </div>
+      </div>
+
+      <div class="tour-mocks">
+        <img
+          class="hide-on-mobile"
+          src="/assets/images/nomnom/Tour-info-img-1.png"
+          alt="nomnom mockup"
+        />
+        <img
+          class="show-on-mobile"
+          src="/assets/images/nomnom/Frame 54.png"
+          alt="nomnom mockup"
+        />
+        <img
+          src="/assets/images/nomnom/tour_reviews-x.png"
+          alt="nomnom mockup"
+        />
+        <img src="/assets/images/nomnom/about_lee-x.png" alt="nomnom mockup" />
+        <img
+          src="/assets/images/nomnom/more_from_lee-x.png"
+          alt="nomnom mockup"
+        />
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="left-title-and-p">
+          <h3>RESEARCH & INSPIRATION</h3>
+          <p class="text-container-3">
+            As a lover of asian food, I researched the issue to understand how I
+            could give the interface an interesting, modern visual take on
+            eastern cultures while avoiding the pitfalls of cliches. I ended up
+            finding inspiration in westernized versions of the asian quizine
+            culture: takeout menus.
+          </p>
+        </div>
+
+        <div class="three-img-container">
+          <img
+            src="/assets/images/nomnom/dribbble-yiwen_lu-ramen-set-2016-square300.png"
+            alt="inspection image"
+          />
+          <div>
+            <img
+              class="contained-img"
+              src="/assets/images/nomnom/kittokatsu_little_tokyo__v5_List_Image.png"
+              alt="inspection image"
+            />
+            <img
+              class="contained-img"
+              src="/assets/images/nomnom/ramen.png"
+              alt="inspection image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="font-selection-section">
+          <div class="font-selection">
+            <h3>TYPOGRAPHY</h3>
+            <h4>Headings</h4>
+            <h1>Staatliches</h1>
+            <h4>Paragraphs</h4>
+            <h2>Roboto Regular</h2>
+          </div>
+          <div class="mock-contnier hide-on-tablet">
+            <img
+              src="/assets/images/nomnom/Cropped-device.png"
+              alt="nomnom mockup"
+            />
+            <div class="text-box">
+              <h1>
+                dim sumin’<br />
+                in new york
+              </h1>
+              <p>
+                The first two hours will be spent sampling steamed, boiled &
+                fried dumplings from a variety of pop-up shops, sit-down
+                restaurants, and streetside stalls. We'll test your chopsticks
+                skills with Shanghai's famous soup dumplings (xiaolongbao) and
+                get your mouth watering with fried potstickers straight from the
+                wok. We'll eat several other regional varieties of dumplings and
+                a few surprises from other provincial Chinese cuisines as we
+                explore the leafy streets of the former French Concession.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="color-palette">
+        <h3 class="centered-text">COLOR PALETTE</h3>
+        <div class="colors">
+          <div data-color-name="Takeaway Cobalt"></div>
+          <div data-color-name="Tom Yum Pink"></div>
+          <div data-color-name="Waterlilly Nude"></div>
+          <div data-color-name="Zen White"></div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p">
+          <h3>ILLUSTRATIONS</h3>
+          <p class="text-container-3">
+            Asian takeout menus often feature smooth-lined illustations. Imagine
+            my delight, as it is my exact style of illustrating! Category icons
+            were quickly jotted down to fit the overall aesthetics of the app.
+          </p>
+        </div>
+        <div class="illustrations-section">
+          <img src="/assets/images/nomnom/noodles-img.png" alt="illustration" />
+          <img src="/assets/images/nomnom/seafood-img.png" alt="illustration" />
+          <img src="/assets/images/nomnom/sushi-img.png" alt="illustration" />
+          <img src="/assets/images/nomnom/vegan-img.png" alt="illustration" />
+          <img src="/assets/images/nomnom/dimsum-img.png" alt="illustration" />
+          <img src="/assets/images/nomnom/sate-img.png" alt="illustration" />
+          <img src="/assets/images/nomnom/fried-img.png" alt="illustration" />
+          <img src="/assets/images/nomnom/bbq-img.png" alt="illustration" />
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="another-app-btn-section">
+          <p class="centered-text">
+            Like what you see?<br />
+            stick around and look at some other stuff I created.
+          </p>
+          <img class="arrow-img" src="/assets/images/Vector.svg" alt="here" />
+          <div class="btn-container">
+            <a href="#" class="btn" data-sub-text="dashboard ui">
+              herbalist
+            </a>
+            <a href="#" class="btn" data-sub-text="crypto exchange">
+              bits of gold
+            </a>
+            <a href="#" class="btn" data-sub-text="ecommerce ui">
+              hatch baby
+            </a>
+            <a href="#" class="btn" data-sub-text="empowering voters">
+              politic.li
+            </a>
+            <a href="#" class="btn" data-sub-text="lo yodaim al ma">
+              afgana
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
-      <div class="container">
-        <a href="*" class="text-btn contact-btn">CONTACT ME</a>
-        <h4 class="color-primary">+972 50 335 6661</h4>
-        <div class="divider">//</div>
-        <h4 class="color-primary">alona.cr@gmail.com</h4>
-      </div>
+      <a href="*" class="text-btn contact-btn">CONTACT ME</a>
+      <h4 class="color-primary">+972 50 335 6661</h4>
+      <div class="divider">//</div>
+      <h4 class="color-primary">alona.cr@gmail.com</h4>
     </footer>
 
     <script src="/assets/rellax.min.js"></script>

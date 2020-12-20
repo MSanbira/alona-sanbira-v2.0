@@ -1,7 +1,8 @@
 :root {
   --primary-color: #4800bd;
   --primary-color-fade: rgba(72, 0, 189, 0.2);
-  --secondary-color: #007C6D;
+  --secondary-color: #007c6d;
+  --secondary-color-fade: #b3d8d3;
   --text-color: #050812;
   --weight-normal: 300;
   --weight-bold: 600; }
@@ -12,8 +13,11 @@ body {
   margin-top: 83px;
   font-weight: var(--weight-normal); }
 
+.contained-img {
+  max-width: 100%; }
+
 .container {
-  width: 1215px;
+  width: 1278px;
   margin: 0 auto;
   padding: 0 24px; }
 
@@ -25,9 +29,18 @@ section[data-page-name] {
 .color-primary {
   color: var(--primary-color) !important; }
 
+.margin-center {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.centered-text {
+  text-align: center !important; }
+
 .highlight {
   background: rgba(69, 230, 210, 0.5);
-  box-shadow: 0 0 0 2px rgba(69, 230, 210, 0.5); }
+  box-shadow: 0 0 0 2px rgba(69, 230, 210, 0.5);
+  text-decoration: none; }
 
 h1,
 h2,
@@ -47,7 +60,10 @@ h1 {
   font-weight: var(--weight-bold); }
 
 h2 {
-  font-weight: 800; }
+  font-size: 36px; }
+
+h3 {
+  font-weight: var(--weight-bold); }
 
 .nav-btn.active.active.active.active.active {
   color: var(--secondary-color); }
@@ -69,7 +85,8 @@ h2 {
     display: flex;
     flex-flow: row nowrap;
     align-items: center; }
-    .text-btn.with-img img, .text-btn.with-img svg {
+    .text-btn.with-img img,
+    .text-btn.with-img svg {
       margin-left: 8px; }
 
 .btn {
@@ -90,8 +107,8 @@ h2 {
   .btn[data-sub-text]::after {
     content: attr(data-sub-text);
     font-weight: var(--weight-normal);
-    margin-left: 24px;
-    padding-left: 24px;
+    margin-left: 16px;
+    padding-left: 16px;
     border-left: solid var(--primary-color) 2px;
     opacity: 0;
     transition: 0.3s; }
@@ -116,11 +133,23 @@ h2 {
       border-width: 2px;
       top: 10px;
       left: 10px; }
+    .btn.btn-big::after {
+      margin-left: 24px;
+      padding-left: 24px; }
     .btn.btn-big:hover {
       transform: translate(4px, 4px);
       box-shadow: 0 0 var(--primary-color); }
   .btn img:not(:last-child) {
     margin-right: 8px; }
+
+.text-container-1 {
+  width: 424px; }
+
+.text-container-2 {
+  width: 464px; }
+
+.text-container-3 {
+  width: 504px; }
 
 .divider {
   color: var(--primary-color);

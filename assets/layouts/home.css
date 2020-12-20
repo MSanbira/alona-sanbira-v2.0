@@ -31,6 +31,8 @@
       top: 253px;
       height: 100px;
       z-index: 30; }
+  #homePage .title-cat-container .title-cat-mobile {
+    display: none; }
 #homePage .main-desc {
   text-align: center;
   position: relative;
