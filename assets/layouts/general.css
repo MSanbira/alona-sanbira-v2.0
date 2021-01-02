@@ -47,29 +47,46 @@ header {
       position: absolute;
       top: 40px;
       left: -16px; }
+      header nav .work-nav-links::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -32px;
+        height: 32px;
+        width: 100%; }
       header nav .work-nav-links .text-btn {
         margin-right: 0; }
         header nav .work-nav-links .text-btn:not(:last-child) {
           margin-bottom: 24px; }
-      header nav .work-nav-links.show {
-        display: flex; }
   header .contact-and-cv,
   header .mobile-menu-icon,
   header .mobile-menu-exit,
   header .work-divider {
     display: none; }
 
+.work-btn:hover ~ .work-nav-links,
+.work-nav-links:hover {
+  display: flex; }
+
 footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: white;
   border-top: 1px solid var(--primary-color-fade);
   padding: 24px; }
+  footer .contacts {
+    display: flex;
+    align-items: center; }
   footer .contact-btn {
     margin-right: 24px;
     font-weight: var(--weight-bold); }
   footer h4 {
     opacity: 0.5; }
+  footer .socials {
+    display: flex;
+    gap: 16px; }
 
 .content-divider {
   height: 1px;
@@ -81,7 +98,7 @@ footer {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  max-height: 675px; }
+  max-height: calc(min(70vh, 675px)); }
   .main-img img {
     width: 100vw;
     height: auto;
@@ -153,7 +170,8 @@ footer {
 
 .centered-title-and-p h3 {
   text-align: center;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  text-transform: uppercase; }
 .centered-title-and-p p {
   text-align: center;
   margin: 0 auto; }

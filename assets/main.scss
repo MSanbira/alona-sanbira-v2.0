@@ -42,6 +42,10 @@ section[data-page-name] {
   margin-right: auto !important;
 }
 
+.margin-down {
+  margin-bottom: 56px;
+}
+
 .centered-text {
   text-align: center !important;
 }
@@ -117,6 +121,7 @@ h3 {
   color: var(--primary-color);
   font-weight: var(--weight-normal);
   text-decoration: none;
+  letter-spacing: 0.02em;
   cursor: pointer;
   position: relative;
   width: fit-content;
@@ -145,12 +150,15 @@ h3 {
   &.btn-small {
     padding: 4px 16px;
   }
+  &.icon-btn {
+    padding: 4px;
+  }
   &.btn-long {
     padding: 8px 40px;
   }
   &.btn-big {
     padding: 30px 44px;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: var(--weight-bold);
     line-height: 1;
     justify-content: flex-start;

@@ -52,14 +52,20 @@ header {
       position: absolute;
       top: 40px;
       left: -16px;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -32px;
+        height: 32px;
+        width: 100%;
+      }
       .text-btn {
         margin-right: 0;
         &:not(:last-child) {
           margin-bottom: 24px;
         }
-      }
-      &.show {
-        display: flex;
       }
     }
   }
@@ -71,18 +77,32 @@ header {
   }
 }
 
+.work-btn:hover ~ .work-nav-links,
+.work-nav-links:hover {
+  display: flex;
+}
+
 footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: white;
   border-top: 1px solid var(--primary-color-fade);
   padding: 24px;
+  .contacts {
+    display: flex;
+    align-items: center;
+  }
   .contact-btn {
     margin-right: 24px;
     font-weight: var(--weight-bold);
   }
   h4 {
     opacity: 0.5;
+  }
+  .socials {
+    display: flex;
+    gap: 16px;
   }
 }
 
@@ -97,7 +117,7 @@ footer {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  max-height: 675px;
+  max-height: calc(min(70vh, 675px));
   img {
     width: 100vw;
     height: auto;
@@ -189,6 +209,7 @@ footer {
   h3 {
     text-align: center;
     margin-bottom: 24px;
+    text-transform: uppercase;
   }
   p {
     text-align: center;

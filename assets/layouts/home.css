@@ -65,7 +65,8 @@
   #homePage .select-work-container h2 {
     text-transform: uppercase;
     letter-spacing: 7px;
-    margin-bottom: 48px; }
+    margin-bottom: 40px;
+    font-size: 18px; }
   #homePage .select-work-container .btn-container {
     width: 720px; }
   #homePage .select-work-container .btn {

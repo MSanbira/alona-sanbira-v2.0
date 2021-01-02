@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="/assets/reset.css" type="text/css" />
     <link rel="stylesheet" href="/assets/main.css" type="text/css" />
@@ -21,6 +25,11 @@
     <link rel="stylesheet" href="/assets/layouts/home.css" type="text/css" />
     <link rel="stylesheet" href="/assets/layouts/about.css" type="text/css" />
     <link rel="stylesheet" href="/assets/layouts/nomnom.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/assets/layouts/hatch-baby.css"
+      type="text/css"
+    />
     <link
       rel="stylesheet"
       href="/assets/layouts/responsive.css"
@@ -48,10 +57,7 @@
             alt="close"
           />
           <a href="#about" class="text-btn nav-btn">about</a>
-          <div
-            class="text-btn with-img hide-on-mobile nav-btn"
-            data-open-menu="work"
-          >
+          <div class="text-btn with-img hide-on-mobile nav-btn work-btn">
             work
             <svg
               width="8"
@@ -70,21 +76,23 @@
           <div class="work-divider color-primary">select work</div>
           <div class="work-nav-links" data-menu-to-open="work">
             <a href="#nomnom" class="text-btn nav-btn">nomnom</a>
-            <a href="*" class="text-btn nav-btn">herbalist</a>
-            <a href="*" class="text-btn nav-btn">bits of gold</a>
-            <a href="*" class="text-btn nav-btn">hatch baby</a>
-            <a href="*" class="text-btn nav-btn">politc.li</a>
+            <!-- <a href="*" class="text-btn nav-btn">herbalist</a> -->
+            <!-- <a href="*" class="text-btn nav-btn">bits of gold</a> -->
+            <a href="#hatchBaby" class="text-btn nav-btn">hatch baby</a>
+            <!-- <a href="*" class="text-btn nav-btn">politc.li</a> -->
           </div>
           <div class="contact-and-cv">
             <div class="btn btn-small">
               <img src="/assets/images/mail.svg" alt="contact me" />
             </div>
-            <div class="btn btn-small">resume</div>
+            <a href="/assets/alona sanbira cv.pdf" target="_blank" class="btn btn-small">resume</a>
           </div>
         </nav>
       </div>
-      <div class="btn btn-small">resume</div>
+      <a href="/assets/alona sanbira cv.pdf" target="_blank"  class="btn btn-small">resume</a>
     </header>
+
+    <!-- HOME -->
 
     <section id="homePage" class="show" data-page-name="home">
       <div class="container">
@@ -108,7 +116,7 @@
 
         <p class="color-primary main-desc">
           I'm a product designer with 3+ years’ experience in leading product UX
-          for a variety of digital products.<br />
+          for a variety of digital products, currently employed @ Pendo for Mobile.<br />
           I’m also a huge cat lady.<br />
           <a href="#about" class="color-primary">Read more about me.</a>
           <img
@@ -138,25 +146,31 @@
             >
               nomnom
             </a>
-            <a href="#" class="btn btn-big" data-sub-text="dashboard ui">
+            <!-- <a href="#" class="btn btn-big" data-sub-text="dashboard ui">
               herbalist
             </a>
             <a href="#" class="btn btn-big" data-sub-text="crypto exchange">
               bits of gold
-            </a>
-            <a href="#" class="btn btn-big" data-sub-text="ecommerce ui">
+            </a> -->
+            <a
+              href="#hatchBaby"
+              class="btn btn-big"
+              data-sub-text="ecommerce ui"
+            >
               hatch baby
             </a>
-            <a href="#" class="btn btn-big" data-sub-text="empowering voters">
+            <!-- <a href="#" class="btn btn-big" data-sub-text="empowering voters">
               politic.li
             </a>
             <a href="#" class="btn btn-big" data-sub-text="lo yodaim al ma">
               afgana
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ABOUT -->
 
     <section id="aboutPage" data-page-name="about">
       <img
@@ -193,10 +207,12 @@
             <img src="/assets/images/mail.svg" alt="contact me" />
             <span class="hide-on-mobile">Email me</span>
           </a>
-          <div class="btn btn-long">resume</div>
+          <a href="/assets/alona sanbira cv.pdf" target="_blank"  class="btn btn-long">resume</a>
         </div>
       </div>
     </section>
+
+    <!-- NOMNOM -->
 
     <section id="nomnomPage" data-page-name="nomnom">
       <div class="main-img">
@@ -482,31 +498,433 @@
           </p>
           <img class="arrow-img" src="/assets/images/Vector.svg" alt="here" />
           <div class="btn-container">
-            <a href="#" class="btn" data-sub-text="dashboard ui">
-              herbalist
-            </a>
-            <a href="#" class="btn" data-sub-text="crypto exchange">
+            <!-- <a href="#" class="btn" data-sub-text="dashboard ui"> herbalist </a> -->
+            <!-- <a href="#" class="btn" data-sub-text="crypto exchange">
               bits of gold
-            </a>
-            <a href="#" class="btn" data-sub-text="ecommerce ui">
+            </a> -->
+            <a href="#hatchBaby" class="btn" data-sub-text="ecommerce ui">
               hatch baby
+            </a>
+            <!-- <a href="#" class="btn" data-sub-text="empowering voters">
+              politic.li
+            </a>
+            <a href="#" class="btn" data-sub-text="lo yodaim al ma"> afgana </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HATCH BABY -->
+
+    <section id="hatchBabyPage" data-page-name="hatchBaby">
+      <div class="main-img">
+        <img src="/assets/images/hatch_baby/lamp-header.png" alt="hatch baby app" />
+      </div>
+      <div class="container">
+        <div class="summery-text-container">
+          <div class="titles">
+            <h1>hatch baby</h1>
+            <h4>eCommerce site</h4>
+          </div>
+          <div class="text-block">
+            <h3>TL;DR</h3>
+            <p>
+              Hatch Baby is a real, live company that creates and markets smart
+              nursery peripherals. Their site currently offers 3 products. In my
+              redesign I focused on one product to represent the product page -
+              the Grow smart night light.
+            </p>
+          </div>
+          <div class="text-block">
+            <h3>PROJECT SPECS</h3>
+            <p>
+              A student project, created as a part of my studies at
+              <a href="createfuture.co.il" class="highlight" target="_blank"
+                >CREATE.</a
+              >
+              <br />
+              Role // UI design, Illustration<br />
+              Year // created July, 2019
+            </p>
+          </div>
+          <div class="text-block">
+            <h3>BACKGROUND</h3>
+            <p>
+              There’s a huge array of smart gadgets created to make our lives
+              easier, and new parents are a great target demographic: they’re
+              tired, relatively young, super anxious and nervous and usually
+              have dispensible income.
+            </p>
+          </div>
+          <div class="text-block">
+            <h3>THE GOAL</h3>
+            <p>
+              Deliver a meaningful, straight-forward experience entailing as
+              much information as possible while retaining a feel of simplicity
+              and elegance.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p margin-down">
+          <h3>understanding users’ needs</h3>
+          <p class="text-container-2">
+            When designing for an eCommerce site, my main concern is conveying
+            the product’s value in a meaningful way, and letting those values
+            shine.
+          </p>
+        </div>
+        <img
+          class="margin-center contained-img"
+          src="/assets/images/hatch_baby/homepage.png"
+          alt="hatch baby mockup"
+        />
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container text-mock-row">
+        <div class="left-title-and-p">
+          <h3>SPEAKING TO PARENTS’ PAINS</h3>
+          <p>
+            As part of the site redesign, I chose copy and micro-copy that will
+            help parents understand Hatch Baby’s mission, and their products’
+            value.
+          </p>
+        </div>
+        <div class="mock-box-notes-container">
+          <h2>
+            Your bedtime routine <br />
+            just became a breeze
+          </h2>
+          <h4>
+            Night light, sound machine, and Time-to-Rise indicator in one modern
+            device, designed to control and program conveniently from your
+            phone.
+          </h4>
+          <div class="mock-btn">Buy now | $59</div>
+          <img
+            src="/assets/images/hatch_baby/Musical Notes.png"
+            alt="music notes"
+          />
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="left-title-and-p margin-down">
+          <h3>PRODUCT PAGE</h3>
+          <p class="text-container-3">
+            These days, product pages are filled with an enormous amount of
+            detailed information, and on this page it was a main challenge. My
+            design sought to give all the necessary information without feeling
+            overcrowded and dense.
+          </p>
+        </div>
+        <img
+          class="margin-center contained-img"
+          src="/assets/images/hatch_baby/product-page.png"
+          alt="hatch baby mockup"
+        />
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p margin-down">
+          <h3>SCALING DOWN</h3>
+          <p class="text-container-2">
+            The mobile version required refitting the page as well as creating
+            mobile-relevant components like swipe galleries and horizontal
+            scrolling.
+          </p>
+        </div>
+        <div class="two-long-mocks hide-on-mobile">
+          <img
+            src="/assets/images/hatch_baby/Device-Mock-Left.png"
+            alt="hatch baby mockup"
+          />
+          <img
+            src="/assets/images/hatch_baby/Device-Mock-Right.png"
+            alt="hatch baby mockup"
+          />
+        </div>
+      </div>
+
+      <div class="img-carousel">
+        <div class="dots-cover">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="item">
+          <img
+            src="/assets/images/hatch_baby/Device-Mock-left-m.png"
+            alt="nomnom mockup"
+          />
+          <div class="dots">
+            <div class="selected"></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="/assets/images/hatch_baby/Device-Mock-right-m.png"
+            alt="nomnom mockup"
+          />
+          <div class="dots">
+            <div></div>
+            <div class="selected"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p margin-down">
+          <h3>VALUABLE FEATURES</h3>
+          <p class="text-container-2">
+            As part of my intent to coherently communicate product value to
+            parents, I chose my top three features I knew from talking to
+            parents are critical to understanding the product’s worth.
+          </p>
+        </div>
+        <div class="does-it-all-container">
+          <h2 class="hide-on-mobile">The sleep device that does it all</h2>
+          <div class="features-section">
+            <div class="feature-item hide-on-mobile">
+              <img src="/assets/images/hatch_baby/Frame 113.svg" alt="sun" />
+              <h3>Style to match</h3>
+              <p>
+                Select from our collection of fun coverlets to coordinate with
+                your child's nursery or bedroom.
+              </p>
+            </div>
+            <div class="feature-item hide-on-mobile">
+              <img src="/assets/images/hatch_baby/Frame 108.svg" alt="shapes" />
+              <h3>Simple and intuitive</h3>
+              <p>
+                A modern device, controlled and programmed conveniently from
+                your phone.
+              </p>
+            </div>
+            <div class="feature-item">
+              <img
+                src="/assets/images/hatch_baby/Frame 109.svg"
+                alt="product"
+              />
+              <h3>Time-to-rise</h3>
+              <p>
+                Set a timer to color the lamp, so your toddler knows it’s time
+                to get out of bed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="color-palette">
+        <h3 class="centered-text">COLOR PALETTE</h3>
+        <div class="colors">
+          <div data-color-name="Happy Teal"></div>
+          <div data-color-name="Baby-bottom"></div>
+          <div data-color-name="Nursery Rhyme"></div>
+          <div data-color-name="Midnight Blue"></div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p margin-down">
+          <h3>ICONOGRAPHY</h3>
+        </div>
+        <div class="iconography-container">
+          <div class="iconography-item">
+            <img src="/assets/images/hatch_baby/shipping.svg" alt="shipping" />
+            <h3>
+              Free<br />
+              Shipping
+            </h3>
+          </div>
+          <div class="iconography-item">
+            <img src="/assets/images/hatch_baby/recycle.svg" alt="recycle" />
+            <h3>
+              Recycled<br />
+              materials
+            </h3>
+          </div>
+          <div class="iconography-item">
+            <img src="/assets/images/hatch_baby/calendar.svg" alt="calendar" />
+            <h3>
+              5-year<br />
+              warranty
+            </h3>
+          </div>
+          <div class="iconography-item">
+            <img src="/assets/images/hatch_baby/truck.svg" alt="truck" />
+            <h3>
+              Same-day<br />
+              delivery
+            </h3>
+          </div>
+          <div class="iconography-item">
+            <img src="/assets/images/hatch_baby/sounds.svg" alt="sounds" />
+            <h3>
+              Original<br />
+              music
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p margin-down">
+          <h3>RESEARCH & INSPIRATION</h3>
+          <p class="text-container-3">
+            When researching competitors I realized most sites aim to enhance
+            the “scientific” and “technological” side of smart products, while
+            almost all of them overlook the issue this creates - a seemingly
+            complicated and inaccessible product a ‘normal’ parent would have
+            difficulty utilizing. Here are some examples I took inspiration
+            from:
+          </p>
+        </div>
+
+        <div class="two-img-baby-container">
+          <img
+            class="contained-img"
+            src="/assets/images/hatch_baby/baby.png"
+            alt="baby"
+          />
+          <img
+            class="contained-img"
+            src="/assets/images/hatch_baby/dayno.png"
+            alt="dayno"
+          />
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="centered-title-and-p margin-down">
+          <h3>ILLUSTRATIONS</h3>
+          <p class="text-container-3">
+            As a design choice, I aimed to create a soft, childlike interface
+            that would appeal to parents, drawing a straight line between the
+            innocence and child friendly look and products that keep babies and
+            parents safe & happy.
+          </p>
+        </div>
+        <div class="birds-container hide-on-mobile">
+          <img
+            src="/assets/images/hatch_baby/birds3.png"
+            alt="bird illustration"
+          />
+          <img
+            src="/assets/images/hatch_baby/birds2.png"
+            alt="bird illustration"
+          />
+          <img
+            src="/assets/images/hatch_baby/birds1.png"
+            alt="bird illustration"
+          />
+        </div>
+      </div>
+
+      <div class="img-carousel">
+        <div class="dots-cover">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="item">
+          <img
+            src="/assets/images/hatch_baby/birds3.png"
+            alt="bird illustration"
+          />
+          <div class="dots">
+            <div class="selected"></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="/assets/images/hatch_baby/birds2.png"
+            alt="bird illustration"
+          />
+          <div class="dots">
+            <div></div>
+            <div class="selected"></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="/assets/images/hatch_baby/birds1.png"
+            alt="bird illustration"
+          />
+          <div class="dots">
+            <div></div>
+            <div></div>
+            <div class="selected"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-divider"></div>
+
+      <div class="container">
+        <div class="another-app-btn-section">
+          <p class="centered-text">
+            Like what you see?<br />
+            stick around and look at some other stuff I created.
+          </p>
+          <img class="arrow-img" src="/assets/images/Vector.svg" alt="here" />
+          <div class="btn-container">
+            <a href="#nomnom" class="btn" data-sub-text="a place for foodies">
+              nomnom
+            </a>
+            <!-- <a href="#" class="btn" data-sub-text="dashboard ui"> herbalist </a> -->
+            <!-- <a href="#" class="btn" data-sub-text="crypto exchange">
+              bits of gold
             </a>
             <a href="#" class="btn" data-sub-text="empowering voters">
               politic.li
-            </a>
-            <a href="#" class="btn" data-sub-text="lo yodaim al ma">
-              afgana
-            </a>
+            </a> -->
+            <!-- <a href="#" class="btn" data-sub-text="lo yodaim al ma"> afgana </a> -->
           </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <a href="*" class="text-btn contact-btn">CONTACT ME</a>
+      <div class="contacts">
+        <a href="*" class="text-btn contact-btn">CONTACT ME</a>
       <h4 class="color-primary">+972 50 335 6661</h4>
       <div class="divider">//</div>
       <h4 class="color-primary">alona.cr@gmail.com</h4>
+      </div>
+      <div class="socials hide-on-mobile">
+        <a class="btn icon-btn" href="https://www.linkedin.com/in/alona-sanbira-ux/" target="_blank">
+          <img src="/assets/images/linkedin.svg" alt="linkedin" />
+        </a>
+        <a class="btn icon-btn" href="https://www.instagram.com/betterdonethanpurfect/" target="_blank">
+          <img src="/assets/images/instagram.svg" alt="instagram" />
+        </a>
+      </div>
+      
     </footer>
 
     <script src="/assets/rellax.min.js"></script>

@@ -3,11 +3,11 @@ const rellax = new Rellax('.rellax');
 const menus = document.querySelectorAll("[data-menu-to-open]");
 const pages = document.querySelectorAll("[data-page-name]");
 const pageNavBtns = document.querySelectorAll(".nav-btn");
-const workBtn = document.querySelector('[data-open-menu="work"]');
+const workBtn = document.querySelector('.work-btn');
 const whiteScreen = document.querySelector('.white-screen');
 let openMenu = "";
 let currentPage = 'home';
-const optionalPages = ['home', 'about', 'nomnom']
+const optionalPages = ['home', 'about', 'nomnom', 'hatchBaby']
 
 function init() {
   if(window.location.hash && withoutHash(window.location.hash) !== currentPage) {
@@ -88,6 +88,7 @@ function setPage(pageName) {
     else {
       workBtn.classList.remove('active');
     }
+    window.scrollTo(0, 0);
     closeWhiteScreen();
   }, 600);
 }

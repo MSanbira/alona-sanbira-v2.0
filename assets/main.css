@@ -34,6 +34,9 @@ section[data-page-name] {
   margin-left: auto !important;
   margin-right: auto !important; }
 
+.margin-down {
+  margin-bottom: 56px; }
+
 .centered-text {
   text-align: center !important; }
 
@@ -95,6 +98,7 @@ h3 {
   color: var(--primary-color);
   font-weight: var(--weight-normal);
   text-decoration: none;
+  letter-spacing: 0.02em;
   cursor: pointer;
   position: relative;
   width: fit-content;
@@ -119,11 +123,13 @@ h3 {
       opacity: 1; }
   .btn.btn-small {
     padding: 4px 16px; }
+  .btn.icon-btn {
+    padding: 4px; }
   .btn.btn-long {
     padding: 8px 40px; }
   .btn.btn-big {
     padding: 30px 44px;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: var(--weight-bold);
     line-height: 1;
     justify-content: flex-start;
