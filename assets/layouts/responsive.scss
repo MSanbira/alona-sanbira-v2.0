@@ -4,7 +4,9 @@
   }
 
   .container {
-    width: 798px;
+    width: 800px;
+  padding: 0 calc(max(24px, calc(50vw - 400px)));
+  max-width: calc(100% - 48px);
   }
 
   #homePage {
@@ -84,6 +86,11 @@
         }
       }
     }
+    .birds-container {
+      img {
+        height: 150px;
+      }
+    }
   }
 }
 
@@ -97,7 +104,9 @@
   }
 
   .container {
+    box-sizing: border-box;
     width: 100%;
+    max-width: 100%;
     padding: 0 16px;
   }
 
@@ -163,6 +172,7 @@
   .color-palette {
     .colors {
       div {
+        margin: 0 -32px;
         &::after {
           display: none;
         }
@@ -335,10 +345,6 @@
       .btn {
         width: 100%;
         justify-content: center;
-        &::after {
-          display: block;
-          opacity: 1;
-        }
       }
     }
   }
@@ -406,6 +412,12 @@
     .main-img {
       img {
         max-height: 275px;
+      }
+    }
+
+    .birds-container {
+      img {
+        height: auto;
       }
     }
   }

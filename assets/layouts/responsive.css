@@ -3,7 +3,9 @@
     display: none !important; }
 
   .container {
-    width: 798px; }
+    width: 800px;
+    padding: 0 calc(max(24px, calc(50vw - 400px)));
+    max-width: calc(100% - 48px); }
 
   #homePage .select-work-container .confetti-sm1-img {
     right: -288px; }
@@ -52,7 +54,9 @@
       max-height: 100px;
       max-width: 140px; }
     #hatchBabyPage .iconography-container .iconography-item h3 {
-      font-size: 18px; } }
+      font-size: 18px; }
+  #hatchBabyPage .birds-container img {
+    height: 150px; } }
 @media (max-width: 765px) {
   body {
     margin-top: 67px; }
@@ -61,7 +65,9 @@
     display: none !important; }
 
   .container {
+    box-sizing: border-box;
     width: 100%;
+    max-width: 100%;
     padding: 0 16px; }
 
   h1 {
@@ -106,8 +112,10 @@
     .summery-text-container .text-block h3 {
       margin-bottom: 8px; }
 
-  .color-palette .colors div::after {
-    display: none; }
+  .color-palette .colors div {
+    margin: 0 -32px; }
+    .color-palette .colors div::after {
+      display: none; }
 
   header {
     padding: 16px; }
@@ -233,9 +241,6 @@
     .another-app-btn-section .btn-container .btn {
       width: 100%;
       justify-content: center; }
-      .another-app-btn-section .btn-container .btn::after {
-        display: block;
-        opacity: 1; }
 
   #nomnomPage .host-container {
     margin-top: 40px; }
@@ -276,6 +281,8 @@
   #hatchBabyPage .two-img-baby-container {
     grid-template-columns: auto; }
   #hatchBabyPage .main-img img {
-    max-height: 275px; } }
+    max-height: 275px; }
+  #hatchBabyPage .birds-container img {
+    height: auto; } }
 
 /*# sourceMappingURL=responsive.css.map */

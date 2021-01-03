@@ -9,8 +9,7 @@
   display: flex;
   gap: 80px;
   justify-content: center;
-  align-items: flex-start;
-  overflow: hidden; }
+  align-items: flex-start; }
   #hatchBabyPage .two-long-mocks img {
     display: block; }
     #hatchBabyPage .two-long-mocks img:last-child {
@@ -120,7 +119,6 @@
 #hatchBabyPage .birds-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  overflow: hidden; }
+  align-items: center; }
 
 /*# sourceMappingURL=hatch-baby.css.map */

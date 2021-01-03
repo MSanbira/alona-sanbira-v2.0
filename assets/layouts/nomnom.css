@@ -39,13 +39,14 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center; }
+#nomnomPage .font-selection-container {
+  margin-top: -24px;
+  margin-bottom: -56px; }
 #nomnomPage .font-selection-section {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: 56px;
   width: 100%;
-  margin-top: -24px;
-  margin-bottom: -56px;
   overflow: hidden; }
   #nomnomPage .font-selection-section .font-selection {
     margin-top: 80px; }

@@ -13,7 +13,6 @@
     gap: 80px;
     justify-content: center;
     align-items: flex-start;
-    overflow: hidden;
     img {
       display: block;
       &:last-child {
@@ -162,6 +161,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
   }
 }

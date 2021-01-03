@@ -98,7 +98,8 @@ footer {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  max-height: calc(min(70vh, 675px)); }
+  max-height: calc(min(70vh, 675px));
+  border-bottom: solid 1px #000; }
   .main-img img {
     width: 100vw;
     height: auto;
@@ -180,12 +181,13 @@ footer {
   margin-bottom: 24px; }
 
 .color-palette h3 {
-  margin-bottom: 32px; }
+  margin-bottom: 24px; }
 .color-palette .colors {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-top: 8px; }
   .color-palette .colors div {
     display: flex;
     flex-flow: column;
@@ -219,5 +221,8 @@ footer {
     justify-content: flex-start;
     min-width: 320px;
     padding: 16px; }
+    .another-app-btn-section .btn-container .btn::after {
+      display: block;
+      opacity: 1; }
 
 /*# sourceMappingURL=general.css.map */
